@@ -1,12 +1,26 @@
+/* eslint-disable react/jsx-filename-extension */
+
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+
+// @material-ui theme
+import { MuiThemeProvider } from '@material-ui/core/styles';
+import CssBaseline from '@material-ui/core/CssBaseline';
+
+// React Router
+import { BrowserRouter } from 'react-router-dom';
+
+// Custom Theme
+import theme from './assets/css/jackinaboxTheme';
+
 import App from './App';
-import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDOM.render(
+  <MuiThemeProvider theme={theme}>
+    <CssBaseline />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </MuiThemeProvider>,
+  document.getElementById('root'),
+);
