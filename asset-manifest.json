@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/jackinabox/static/js/main.d60883f3.chunk.js",
+    "main.js.map": "/jackinabox/static/js/main.d60883f3.chunk.js.map",
+    "runtime-main.js": "/jackinabox/static/js/runtime-main.f5b999df.js",
+    "runtime-main.js.map": "/jackinabox/static/js/runtime-main.f5b999df.js.map",
+    "static/js/2.6a1b8c66.chunk.js": "/jackinabox/static/js/2.6a1b8c66.chunk.js",
+    "static/js/2.6a1b8c66.chunk.js.map": "/jackinabox/static/js/2.6a1b8c66.chunk.js.map",
+    "index.html": "/jackinabox/index.html",
+    "precache-manifest.09793bfcf862ee03367e7112cbaf4340.js": "/jackinabox/precache-manifest.09793bfcf862ee03367e7112cbaf4340.js",
+    "service-worker.js": "/jackinabox/service-worker.js",
+    "static/media/box1.jpeg": "/jackinabox/static/media/box1.56c7c9fd.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f5b999df.js",
+    "static/js/2.6a1b8c66.chunk.js",
+    "static/js/main.d60883f3.chunk.js"
+  ]
+}
