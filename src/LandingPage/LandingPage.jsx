@@ -14,7 +14,7 @@ import GridItem from '../components/Grid/GridItem';
 import History from './History';
 import LandingPageStyle from './LandingPageStyle';
 
-import BackgroundImage from '../assets/img/box1.jpeg';
+import BackgroundImage from '../assets/img/image004.jpg';
 
 function LandingPage(props) {
   const { classes } = props;
@@ -28,8 +28,7 @@ function LandingPage(props) {
                 Jack In A Box
               </Typography>
               <Typography variant="h5" gutterBottom color="inherit">
-                Catering for all your hospitality needs
-
+                We&apos;d love to Pop-Up at your next event
               </Typography>
               <br />
             </GridItem>

@@ -31,9 +31,6 @@ function History(props) {
           </Typography>
         </GridItem>
       </GridContainer>
-      <div>
-        <GridContainer />
-      </div>
     </div>
   );
 }

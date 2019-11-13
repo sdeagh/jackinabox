@@ -6,6 +6,10 @@ import { Link } from 'react-router-dom';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 
+import FacebookIcon from '@material-ui/icons/Facebook';
+import InstaIcon from '@material-ui/icons/Instagram';
+import TwitterIcon from '@material-ui/icons/Twitter';
+
 import HeaderLinksStyle from './HeaderLinksStyle';
 
 function HeaderLinks({ ...props }) {
@@ -26,6 +30,21 @@ function HeaderLinks({ ...props }) {
         <Link to="/contact" className={classes.navLink}>
           Contact
         </Link>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <a href="https://facebook.com" className={classes.navLink}>
+          <FacebookIcon />
+        </a>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <a href="https://instagram.com" className={classes.navLink}>
+          <InstaIcon />
+        </a>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <a href="https://twitter.com" className={classes.navLink}>
+          <TwitterIcon />
+        </a>
       </ListItem>
     </List>
   );
