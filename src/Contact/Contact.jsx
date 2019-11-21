@@ -47,7 +47,7 @@ function Contact(props) {
               <ListItemIcon>
                 <EmailIcon />
               </ListItemIcon>
-              <ListItemText primary="jack@jackinabox.bar" />
+              <ListItemText primary="info@jackinaboxbars.co.uk" />
             </ListItem>
             <ListItem button>
               <ListItemIcon>

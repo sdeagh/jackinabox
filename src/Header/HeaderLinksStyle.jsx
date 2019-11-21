@@ -8,11 +8,9 @@ const HeaderLinksStyle = (theme) => ({
     listStyle: 'none',
     paddingTop: '0',
     paddingBottom: '0',
-    color: 'inherit',
   },
   listItem: {
     float: 'left',
-    color: 'inherit',
     position: 'relative',
     display: 'block',
     width: 'auto',
@@ -34,7 +32,7 @@ const HeaderLinksStyle = (theme) => ({
     padding: '0 !important',
   },
   navLink: {
-    color: 'inherit',
+    color: theme.palette.text.primary,
     position: 'relative',
     padding: '0.9375rem',
     fontWeight: '500',
@@ -46,7 +44,6 @@ const HeaderLinksStyle = (theme) => ({
     margin: '0px',
     display: 'inline-flex',
     '&:hover,&:focus': {
-      color: 'inherit',
       background: 'rgba(200, 200, 200, 0.2)',
     },
     [theme.breakpoints.down('sm')]: {
@@ -61,7 +58,6 @@ const HeaderLinksStyle = (theme) => ({
     },
   },
   notificationNavLink: {
-    color: 'inherit',
     padding: '0.9375rem',
     fontWeight: '400',
     fontSize: '12px',
@@ -84,7 +80,6 @@ const HeaderLinksStyle = (theme) => ({
     display: 'inline-flex',
   },
   navLinkActive: {
-    color: 'inherit',
     backgroundColor: 'rgba(255, 255, 255, 0.1)',
   },
   icons: {

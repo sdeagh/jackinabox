@@ -10,11 +10,11 @@ const theme = createMuiTheme({
   },
   palette: {
     background: {
-      paper: '#1c1c1c',
-      default: '#1F3044',
+      paper: '#41474a',
+      default: '#000000',
     },
     text: {
-      primary: 'rgba(255, 255, 255, 1)',
+      primary: 'rgba(242, 240, 236, 1)',
       secondary: 'rgba(255, 255, 255, 0.7)',
       disabled: 'rgba(255, 255, 255, 0.5)',
       hint: 'rgba(255, 255, 255, 0.5)',
