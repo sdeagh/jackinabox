@@ -94,7 +94,7 @@ const HeaderLinksStyle = (theme) => ({
   },
   socialIcons: {
     position: 'relative',
-    fontSize: '20px !important',
+    fontSize: '40px !important',
     marginRight: '4px',
   },
   ...tooltip,

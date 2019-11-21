@@ -5,10 +5,12 @@ import withStyles from '@material-ui/core/styles/withStyles';
 import { Link } from 'react-router-dom';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
+import Tooltip from '@material-ui/core/Tooltip';
 
 import FacebookIcon from '@material-ui/icons/Facebook';
 import InstaIcon from '@material-ui/icons/Instagram';
 import TwitterIcon from '@material-ui/icons/Twitter';
+import Button from '../components/CustomButtons/Button';
 
 import HeaderLinksStyle from './HeaderLinksStyle';
 
@@ -31,21 +33,61 @@ function HeaderLinks({ ...props }) {
           Contact
         </Link>
       </ListItem>
+
       <ListItem className={classes.listItem}>
-        <a href="https://facebook.com" className={classes.navLink}>
-          <FacebookIcon />
-        </a>
+        <Tooltip
+          id="instagram-twitter"
+          title="Follow us on fb"
+          placement={window.innerWidth > 959 ? 'top' : 'left'}
+          classes={{ tooltip: classes.tooltip }}
+        >
+          <Button
+            href="https://facebook.com/"
+            target="_blank"
+            color="transparent"
+            className={classes.navLink}
+          >
+            <FacebookIcon className={classes.socialIcons} />
+          </Button>
+        </Tooltip>
       </ListItem>
+
       <ListItem className={classes.listItem}>
-        <a href="https://instagram.com" className={classes.navLink}>
-          <InstaIcon />
-        </a>
+        <Tooltip
+          id="instagram-twitter"
+          title="Follow us on insta"
+          placement={window.innerWidth > 959 ? 'top' : 'left'}
+          classes={{ tooltip: classes.tooltip }}
+        >
+          <Button
+            href="https://instagram.com/"
+            target="_blank"
+            color="transparent"
+            className={classes.navLink}
+          >
+            <InstaIcon className={classes.socialIcons} />
+          </Button>
+        </Tooltip>
       </ListItem>
+
       <ListItem className={classes.listItem}>
-        <a href="https://twitter.com" className={classes.navLink}>
-          <TwitterIcon />
-        </a>
+        <Tooltip
+          id="instagram-twitter"
+          title="Follow us on twitter"
+          placement={window.innerWidth > 959 ? 'top' : 'left'}
+          classes={{ tooltip: classes.tooltip }}
+        >
+          <Button
+            href="https://twitter.com/CreativeTim?ref=creativetim"
+            target="_blank"
+            color="transparent"
+            className={classes.navLink}
+          >
+            <TwitterIcon className={classes.socialIcons} />
+          </Button>
+        </Tooltip>
       </ListItem>
+
     </List>
   );
 }

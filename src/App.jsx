@@ -7,6 +7,7 @@ import Header from './Header/Header';
 import HeaderLinks from './Header/HeaderLinks';
 import Footer from './Footer/Footer';
 import LandingPage from './LandingPage/LandingPage';
+import Contact from './Contact/Contact';
 
 import AppStyle from './AppStyle';
 
@@ -25,6 +26,7 @@ function App() {
       />
       <Switch>
         <Route exact path="/" component={LandingPage} />
+        <Route path="/contact" component={Contact} />
       </Switch>
       <Footer />
     </div>
