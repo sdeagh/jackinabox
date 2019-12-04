@@ -59,12 +59,6 @@ const headerStyle = (theme) => ({
     paddingTop: '25px',
     color: '#FFFFFF',
   },
-  dark: {
-    color: '#FFFFFF',
-    backgroundColor: '#212121 !important',
-    boxShadow:
-      '0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px rgba(33, 33, 33, 0.46)',
-  },
   white: {
     border: '0',
     padding: '0.625rem 0',

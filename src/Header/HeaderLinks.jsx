@@ -44,7 +44,7 @@ function HeaderLinks({ ...props }) {
           <Button
             href="https://facebook.com/"
             target="_blank"
-            color="transparent"
+            color="facebook"
             className={classes.navLink}
           >
             <FacebookIcon className={classes.socialIcons} />
@@ -80,7 +80,7 @@ function HeaderLinks({ ...props }) {
           <Button
             href="https://twitter.com/CreativeTim?ref=creativetim"
             target="_blank"
-            color="transparent"
+            color="twitter"
             className={classes.navLink}
           >
             <TwitterIcon className={classes.socialIcons} />
