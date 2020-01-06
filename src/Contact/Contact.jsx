@@ -18,8 +18,8 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import InstagramIcon from '@material-ui/icons/Instagram';
 
-import ContactForm from './ContactForm';
 // core components
+import ContactForm from './ContactForm';
 
 import ContactStyle from './ContactStyle';
 
