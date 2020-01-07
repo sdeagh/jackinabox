@@ -30,6 +30,78 @@ function History(props) {
             even more...
           </Typography>
         </GridItem>
+
+        <GridItem xs={12} sm={12} md={8}>
+          <Typography variant="h5" className={classes.title}>
+            Our Offerings
+          </Typography>
+          <Typography variant="body1" className={classes.description}>
+            Bar description goes here
+            <br />
+            <br />
+            More info here
+            <br />
+            <br />
+            yet more
+            <br />
+            <br />
+            even more...
+          </Typography>
+        </GridItem>
+
+        <GridItem xs={12} sm={12} md={8}>
+          <Typography variant="h5" className={classes.title}>
+            Our Offerings
+          </Typography>
+          <Typography variant="body1" className={classes.description}>
+            Bar description goes here
+            <br />
+            <br />
+            More info here
+            <br />
+            <br />
+            yet more
+            <br />
+            <br />
+            even more...
+          </Typography>
+        </GridItem>
+
+        <GridItem xs={12} sm={12} md={8}>
+          <Typography variant="h5" className={classes.title}>
+            Our Offerings
+          </Typography>
+          <Typography variant="body1" className={classes.description}>
+            Bar description goes here
+            <br />
+            <br />
+            More info here
+            <br />
+            <br />
+            yet more
+            <br />
+            <br />
+            even more...
+          </Typography>
+        </GridItem>
+
+        <GridItem xs={12} sm={12} md={8}>
+          <Typography variant="h5" className={classes.title}>
+            Our Offerings
+          </Typography>
+          <Typography variant="body1" className={classes.description}>
+            Bar description goes here
+            <br />
+            <br />
+            More info here
+            <br />
+            <br />
+            yet more
+            <br />
+            <br />
+            even more...
+          </Typography>
+        </GridItem>
       </GridContainer>
     </div>
   );

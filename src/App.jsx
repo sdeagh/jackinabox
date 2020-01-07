@@ -21,7 +21,7 @@ function App() {
         fixed
         changeColorOnScroll={{
           height: 400,
-          color: 'white',
+          color: 'primary',
         }}
       />
       <Switch>
@@ -32,5 +32,6 @@ function App() {
     </div>
   );
 }
+
 
 export default withStyles(AppStyle)(App);

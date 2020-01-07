@@ -5,6 +5,7 @@ import classNames from 'classnames';
 
 // @material-ui/icons
 
+
 // core components
 import Typography from '@material-ui/core/Typography';
 import Parallax from '../Parallax/Parallax';
@@ -35,12 +36,14 @@ function LandingPage(props) {
           </GridContainer>
         </div>
       </Parallax>
+
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
           <History />
         </div>
       </div>
     </div>
+
   );
 }
 

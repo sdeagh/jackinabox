@@ -1,6 +1,6 @@
 import { container, title } from '../assets/css/material-kit-react';
 
-const LandingPageStyle = {
+const landingPageStyle = {
   container: {
     zIndex: '12',
     color: '#FFFFFF',
@@ -21,7 +21,7 @@ const LandingPageStyle = {
     margin: '10px auto 0',
   },
   main: {
-    background: '#2A2B31',
+    background: '#FFFFFF',
     position: 'relative',
     zIndex: '3',
   },
@@ -33,4 +33,4 @@ const LandingPageStyle = {
   },
 };
 
-export default LandingPageStyle;
+export default landingPageStyle;

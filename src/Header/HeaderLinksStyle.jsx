@@ -1,16 +1,21 @@
+import { defaultFont } from '../assets/css/material-kit-react';
+
 import tooltip from '../assets/css/tooltipsStyle';
 
-const HeaderLinksStyle = (theme) => ({
+const headerLinksStyle = (theme) => ({
   list: {
+    ...defaultFont,
     fontSize: '14px',
     margin: 0,
     paddingLeft: '0',
     listStyle: 'none',
     paddingTop: '0',
     paddingBottom: '0',
+    color: 'inherit',
   },
   listItem: {
     float: 'left',
+    color: 'inherit',
     position: 'relative',
     display: 'block',
     width: 'auto',
@@ -32,11 +37,11 @@ const HeaderLinksStyle = (theme) => ({
     padding: '0 !important',
   },
   navLink: {
-    color: theme.palette.text.primary,
+    color: 'inherit',
     position: 'relative',
     padding: '0.9375rem',
-    fontWeight: '500',
-    fontSize: '14px',
+    fontWeight: '400',
+    fontSize: '12px',
     textTransform: 'uppercase',
     borderRadius: '3px',
     lineHeight: '20px',
@@ -44,6 +49,7 @@ const HeaderLinksStyle = (theme) => ({
     margin: '0px',
     display: 'inline-flex',
     '&:hover,&:focus': {
+      color: 'inherit',
       background: 'rgba(200, 200, 200, 0.2)',
     },
     [theme.breakpoints.down('sm')]: {
@@ -58,6 +64,7 @@ const HeaderLinksStyle = (theme) => ({
     },
   },
   notificationNavLink: {
+    color: 'inherit',
     padding: '0.9375rem',
     fontWeight: '400',
     fontSize: '12px',
@@ -80,6 +87,7 @@ const HeaderLinksStyle = (theme) => ({
     display: 'inline-flex',
   },
   navLinkActive: {
+    color: 'inherit',
     backgroundColor: 'rgba(255, 255, 255, 0.1)',
   },
   icons: {
@@ -89,8 +97,16 @@ const HeaderLinksStyle = (theme) => ({
   },
   socialIcons: {
     position: 'relative',
-    fontSize: '40px !important',
+    fontSize: '20px !important',
     marginRight: '4px',
+  },
+  dropdownLink: {
+    '&,&:hover,&:focus': {
+      color: 'inherit',
+      textDecoration: 'none',
+      display: 'block',
+      padding: '10px 20px',
+    },
   },
   ...tooltip,
   marginRight5: {
@@ -98,4 +114,4 @@ const HeaderLinksStyle = (theme) => ({
   },
 });
 
-export default HeaderLinksStyle;
+export default headerLinksStyle;

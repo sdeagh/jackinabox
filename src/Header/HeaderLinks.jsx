@@ -1,99 +1,69 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import withStyles from '@material-ui/core/styles/withStyles';
+/*eslint-disable*/
+import React from "react";
+import DeleteIcon from "@material-ui/icons/Delete";
+import IconButton from "@material-ui/core/IconButton";
+// react components for routing our app without refresh
+import { Link } from "react-router-dom";
 
-import { Link } from 'react-router-dom';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import Tooltip from '@material-ui/core/Tooltip';
+// @material-ui/core components
+import { makeStyles } from "@material-ui/core/styles";
+import List from "@material-ui/core/List";
+import ListItem from "@material-ui/core/ListItem";
+import Tooltip from "@material-ui/core/Tooltip";
 
-import FacebookIcon from '@material-ui/icons/Facebook';
-import InstaIcon from '@material-ui/icons/Instagram';
-import TwitterIcon from '@material-ui/icons/Twitter';
-import Button from '../components/CustomButtons/Button';
+// @material-ui/icons
+import { Apps, CloudDownload } from "@material-ui/icons";
 
-import HeaderLinksStyle from './HeaderLinksStyle';
+// core components
+import Button from "../components/CustomButtons/Button";
 
-function HeaderLinks({ ...props }) {
-  const { classes } = props;
+import styles from './HeaderLinksStyle';
+
+const useStyles = makeStyles(styles);
+
+export default function HeaderLinks(props) {
+  const classes = useStyles();
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
-        <Link to="/about" className={classes.navLink}>
-          About
-        </Link>
+       test
       </ListItem>
-      <ListItem className={classes.listItem}>
-        <Link to="/packages" className={classes.navLink}>
-          Packages
-        </Link>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Link to="/contact" className={classes.navLink}>
-          Contact
-        </Link>
-      </ListItem>
-
+ 
+      
       <ListItem className={classes.listItem}>
         <Tooltip
-          id="instagram-twitter"
-          title="Follow us on fb"
-          placement={window.innerWidth > 959 ? 'top' : 'left'}
+          id="instagram-facebook"
+          title="Follow us on facebook"
+          placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
-            href="https://facebook.com/"
-            target="_blank"
-            color="facebook"
-            className={classes.navLink}
-          >
-            <FacebookIcon className={classes.socialIcons} />
-          </Button>
-        </Tooltip>
-      </ListItem>
-
-      <ListItem className={classes.listItem}>
-        <Tooltip
-          id="instagram-twitter"
-          title="Follow us on insta"
-          placement={window.innerWidth > 959 ? 'top' : 'left'}
-          classes={{ tooltip: classes.tooltip }}
-        >
-          <Button
-            href="https://instagram.com/"
-            target="_blank"
             color="transparent"
+            href="https://www.facebook.com/CreativeTim?ref=creativetim"
+            target="_blank"
             className={classes.navLink}
           >
-            <InstaIcon className={classes.socialIcons} />
+            <i className={classes.socialIcons + " fab fa-facebook"} />
           </Button>
         </Tooltip>
       </ListItem>
-
       <ListItem className={classes.listItem}>
         <Tooltip
-          id="instagram-twitter"
-          title="Follow us on twitter"
-          placement={window.innerWidth > 959 ? 'top' : 'left'}
+          id="instagram-tooltip"
+          title="Follow us on instagram"
+          placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
-            href="https://twitter.com/CreativeTim?ref=creativetim"
+            color="transparent"
+            href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
             target="_blank"
-            color="twitter"
             className={classes.navLink}
           >
-            <TwitterIcon className={classes.socialIcons} />
+            <i className={classes.socialIcons + " fab fa-instagram"} />
           </Button>
         </Tooltip>
       </ListItem>
-
     </List>
   );
 }
-
-HeaderLinks.propTypes = {
-  classes: PropTypes.objectOf(PropTypes.string).isRequired,
-};
-
-export default withStyles(HeaderLinksStyle)(HeaderLinks);
