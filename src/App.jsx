@@ -21,7 +21,7 @@ function App() {
         fixed
         changeColorOnScroll={{
           height: 400,
-          color: 'primary',
+          color: 'dark',
         }}
       />
       <Switch>

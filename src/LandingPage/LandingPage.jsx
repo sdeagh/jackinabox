@@ -12,10 +12,11 @@ import Parallax from '../Parallax/Parallax';
 import GridContainer from '../components/Grid/GridContainer';
 import GridItem from '../components/Grid/GridItem';
 
-import History from './History';
+import Introduction from './Introduction';
 import LandingPageStyle from './LandingPageStyle';
 
 import BackgroundImage from '../assets/img/image004.jpg';
+import FireworksImage from '../assets/img/fireworks.jpg';
 
 function LandingPage(props) {
   const { classes } = props;
@@ -29,17 +30,27 @@ function LandingPage(props) {
                 Jack In A Box
               </Typography>
               <Typography variant="h5" gutterBottom color="inherit">
-                We&apos;d love to Pop-Up at your next event
+                We&apos;d love to pop up at your next event
               </Typography>
               <br />
             </GridItem>
+
           </GridContainer>
         </div>
       </Parallax>
 
-      <div className={classNames(classes.main, classes.mainRaised)}>
+      <div className={`${classes.main} ${classes.mainRaised}`}>
+        <Parallax filter small image={FireworksImage}>
+          <div className={classes.container}>
+            hello
+          </div>
+        </Parallax>
+      </div>
+
+
+      <div className={classNames(classes.main)}>
         <div className={classes.container}>
-          <History />
+          <Introduction />
         </div>
       </div>
     </div>
