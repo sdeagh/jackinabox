@@ -1,81 +1,69 @@
 import React from 'react';
+// nodejs library that concatenates classes
 import classNames from 'classnames';
+// nodejs library to set properties for components
 import PropTypes from 'prop-types';
-import withStyles from '@material-ui/core/styles/withStyles';
+// @material-ui/core components
+import { makeStyles } from '@material-ui/core/styles';
 
-import ParallaxStyle from './ParallaxStyle';
+// core components
+import parallaxStyle from './ParallaxStyle';
 
-class Parallax extends React.Component {
-  constructor(props) {
-    super(props);
-    const windowScrollTop = window.pageYOffset / 3;
-    this.state = {
-      transform: `translate3d(0,${windowScrollTop}px,0)`,
+const useStyles = makeStyles(parallaxStyle);
+
+export default function Parallax(props) {
+  let windowScrollTop;
+  if (window.innerWidth >= 768) {
+    windowScrollTop = window.pageYOffset / 3;
+  } else {
+    windowScrollTop = 0;
+  }
+
+  const [transform, setTransform] = React.useState(
+    `translate3d(0,${windowScrollTop}px,0)`,
+  );
+
+  const resetTransform = () => {
+    windowScrollTop = window.pageYOffset / 3;
+    setTransform(`translate3d(0,${windowScrollTop}px,0)`);
+  };
+
+  React.useEffect(() => {
+    if (window.innerWidth >= 768) {
+      window.addEventListener('scroll', resetTransform);
+    }
+    return function cleanup() {
+      if (window.innerWidth >= 768) {
+        window.removeEventListener('scroll', resetTransform);
+      }
     };
-    this.resetTransform = this.resetTransform.bind(this);
-  }
+  });
 
-  componentDidMount() {
-    const windowScrollTop = window.pageYOffset / 3;
-    this.setState({
-      transform: `translate3d(0,${windowScrollTop}px,0)`,
-    });
-    window.addEventListener('scroll', this.resetTransform);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('scroll', this.resetTransform);
-  }
-
-  resetTransform() {
-    const windowScrollTop = window.pageYOffset / 3;
-    this.setState({
-      transform: `translate3d(0,${windowScrollTop}px,0)`,
-    });
-  }
-
-  render() {
-    const {
-      classes,
-      filter,
-      className,
-      children,
-      style,
-      image,
-      small,
-    } = this.props;
-    const parallaxClasses = classNames({
-      [classes.parallax]: true,
-      [classes.filter]: filter,
-      [classes.small]: small,
-      [className]: className !== undefined,
-    });
-    return (
-      <div
-        className={parallaxClasses}
-        style={{
-          ...style,
-          backgroundImage: `url(${image})`,
-          ...this.state,
-        }}
-      >
-        {children}
-      </div>
-    );
-  }
+  const {
+    filter, className, children, style, image, small,
+  } = props;
+  const classes = useStyles();
+  const parallaxClasses = classNames({
+    [classes.parallax]: true,
+    [classes.filter]: filter,
+    [classes.small]: small,
+    [className]: className !== undefined,
+  });
+  return (
+    <div
+      className={parallaxClasses}
+      style={{
+        ...style,
+        backgroundImage: `url(${image})`,
+        transform,
+      }}
+    >
+      {children}
+    </div>
+  );
 }
 
-Parallax.defaultProps = {
-  className: null,
-  filter: false,
-  children: null,
-  style: null,
-  image: null,
-  small: false,
-};
-
 Parallax.propTypes = {
-  classes: PropTypes.objectOf(String).isRequired,
   className: PropTypes.string,
   filter: PropTypes.bool,
   children: PropTypes.node,
@@ -83,5 +71,3 @@ Parallax.propTypes = {
   image: PropTypes.string,
   small: PropTypes.bool,
 };
-
-export default withStyles(ParallaxStyle)(Parallax);

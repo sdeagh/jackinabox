@@ -27,20 +27,15 @@ const landingPageStyle = (theme) => ({
   mainRaised: {
     margin: '-280px 30px 30px',
   },
-  filter: {
-    '&:before': {
-      background: 'rgba(0, 0, 0, 0.5)',
-    },
-    '&:after,&:before': {
-      position: 'absolute',
-      zIndex: '1',
-      width: '100%',
-      height: '100%',
-      display: 'block',
-      left: '0',
-      top: '0',
-      content: "''",
-    },
+  offer: {
+    textAlign: 'center',
+    color: theme.palette.text.primary,
+  },
+  offerPicture: {
+    opacity: '1',
+  },
+  offerText: {
+    fontWeight: 700,
   },
 });
 
