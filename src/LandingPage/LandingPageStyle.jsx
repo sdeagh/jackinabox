@@ -33,9 +33,7 @@ const landingPageStyle = (theme) => ({
   },
   offerPicture: {
     opacity: '1',
-  },
-  offerText: {
-    fontWeight: 700,
+    borderRadius: theme.spacing(1),
   },
 });
 

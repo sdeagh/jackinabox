@@ -43,10 +43,10 @@ function LandingPage(props) {
         <Parallax small image={FireworksImage} className={classes.offerPicture}>
           <Grid container direction="row" justify="center" alignItems="center">
             <Grid item xs={12} sm={12} md={12} lg={12} className={classes.offer}>
-              <Typography variant="h3" paragraph className="offerText">
+              <Typography variant="h3" paragraph>
                 Happy 2020
               </Typography>
-              <Typography variant="h6" className="offerText">
+              <Typography variant="h6">
                 Enjoy 20% off all bookings made in January & February
               </Typography>
             </Grid>
