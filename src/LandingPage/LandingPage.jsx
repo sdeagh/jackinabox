@@ -26,10 +26,7 @@ function LandingPage(props) {
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={12}>
-              <Typography variant="h3" gutterBottom color="inherit">
-                Jack In A Box
-              </Typography>
-              <Typography variant="h5" gutterBottom color="inherit">
+              <Typography variant="h4" gutterBottom color="inherit">
                 We&apos;d love to pop up at your next event
               </Typography>
               <br />

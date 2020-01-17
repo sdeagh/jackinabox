@@ -21,17 +21,27 @@ export default function HeaderLinks() {
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
         <Link to="/about" className={classes.navLink}>
-         About
+          About
+        </Link>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Link to="/gallery" className={classes.navLink}>
+          Gallery
         </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Link to="/packages" className={classes.navLink}>
-         Packages
+          Packages
+        </Link>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Link to="/drinks" className={classes.navLink}>
+          Drinks
         </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Link to="/contact" className={classes.navLink}>
-         Contact
+          Contact
         </Link>
       </ListItem>
 
