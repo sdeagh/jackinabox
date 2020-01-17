@@ -25,21 +25,29 @@ function LandingPage(props) {
       <Parallax filter image={BackgroundImage}>
         <div className={classes.container}>
           <GridContainer>
-            <GridItem xs={12} sm={12} md={12}>
-              <Typography variant="h4" gutterBottom color="inherit">
+            <GridItem xs={12} sm={12} md={6}>
+              <Typography variant="h2" gutterBottom color="inherit">
                 We&apos;d love to pop up at your next event
               </Typography>
               <br />
             </GridItem>
+            <Grid item xs={12} sm={12} md={6} className={classes.offer}>
+              <Typography variant="h4" paragraph>
+                Happy 2020
+              </Typography>
+              <Typography variant="h6">
+                Enjoy 20% off all bookings made in January & February
+              </Typography>
+            </Grid>
 
           </GridContainer>
         </div>
       </Parallax>
 
-      <div className={`${classes.mainRaised}`}>
+      {/* <div className={`${classes.mainRaised}`}>
         <Parallax small image={FireworksImage} className={classes.offerPicture}>
           <Grid container direction="row" justify="center" alignItems="center">
-            <Grid item xs={12} sm={12} md={12} lg={12} className={classes.offer}>
+            <Grid item xs={12} sm={12} md={6} className={classes.offer}>
               <Typography variant="h3" paragraph>
                 Happy 2020
               </Typography>
@@ -49,9 +57,9 @@ function LandingPage(props) {
             </Grid>
           </Grid>
         </Parallax>
-      </div>
+      </div> */}
 
-      <div className={classNames(classes.main)}>
+      <div className={`${classes.main} ${classes.mainRaised}`}>
         <div className={classes.container}>
           <Introduction />
         </div>

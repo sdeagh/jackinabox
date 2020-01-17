@@ -64,7 +64,7 @@ const headerStyle = (theme) => ({
   // },
   dark: {
     color: theme.palette.text.primary,
-    backgroundColor: `${theme.palette.background.paper} !important`,
+    backgroundColor: `${theme.palette.common.black} !important`,
     boxShadow:
       '0 4px 20px 0px rgba(255, 255, 255, 0.14), 0 7px 12px -5px rgba(33, 33, 33, 0.46)',
   },
