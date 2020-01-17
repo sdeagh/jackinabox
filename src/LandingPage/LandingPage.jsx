@@ -30,34 +30,28 @@ function LandingPage(props) {
                 We&apos;d love to pop up at your next event
               </Typography>
               <br />
+              <div style={{
+                backgroundImage: `url(${FireworksImage})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center center',
+                textAlign: 'center',
+                padding: '30px 30px 30px 30px',
+                borderRadius: '8px',
+              }}
+              >
+                <Typography variant="h4" paragraph>
+                  Happy 2020
+                </Typography>
+                <Typography variant="body2">
+                  Enjoy 20% off all bookings made in January & February
+                </Typography>
+              </div>
             </GridItem>
-            <Grid item xs={12} sm={12} md={6} className={classes.offer}>
-              <Typography variant="h4" paragraph>
-                Happy 2020
-              </Typography>
-              <Typography variant="h6">
-                Enjoy 20% off all bookings made in January & February
-              </Typography>
-            </Grid>
+
 
           </GridContainer>
         </div>
       </Parallax>
-
-      {/* <div className={`${classes.mainRaised}`}>
-        <Parallax small image={FireworksImage} className={classes.offerPicture}>
-          <Grid container direction="row" justify="center" alignItems="center">
-            <Grid item xs={12} sm={12} md={6} className={classes.offer}>
-              <Typography variant="h3" paragraph>
-                Happy 2020
-              </Typography>
-              <Typography variant="h6">
-                Enjoy 20% off all bookings made in January & February
-              </Typography>
-            </Grid>
-          </Grid>
-        </Parallax>
-      </div> */}
 
       <div className={`${classes.main} ${classes.mainRaised}`}>
         <div className={classes.container}>

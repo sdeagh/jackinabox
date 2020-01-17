@@ -26,6 +26,12 @@ const IntroductionStyle = (theme) => ({
     boxShadow:
       '0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)',
   },
+  logo: {
+    height: '50px',
+    width: '50px',
+    background: 'green',
+    border: '1px dolid red',
+  },
 });
 
 export default IntroductionStyle;
