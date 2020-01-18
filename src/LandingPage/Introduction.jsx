@@ -8,6 +8,7 @@ import { Typography } from '@material-ui/core';
 import GridContainer from '../components/Grid/GridContainer';
 import GridItem from '../components/Grid/GridItem';
 import IntroductionStyle from './IntroductionStyle';
+import FireworksImage from '../assets/img/JIAB-FINAL-LOGO.jpg';
 
 const useStyles = makeStyles(IntroductionStyle);
 
@@ -16,7 +17,12 @@ function Introduction() {
   return (
     <GridContainer justify="center">
       <GridItem xs={12} sm={12} md={8}>
-        <div className="logo" />
+        <div
+          className={classes.logo}
+          style={{
+            backgroundImage: `url(${FireworksImage})`,
+          }}
+        />
         <Typography variant="body1" paragraph className={classes.description}>
           Thanks for visiting Jack in a Box bar website. By visiting our site
           you can learn about the services we offer such as bar hire, party organisation,
