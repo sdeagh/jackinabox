@@ -24,7 +24,7 @@ function App() {
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
-          height: 400,
+          height: 200,
           color: 'dark',
         }}
       />
