@@ -3,14 +3,12 @@ const IntroductionStyle = (theme) => ({
     color: theme.palette.text.primary,
   },
   logo: {
-    margin: 'auto',
-    marginTop: '-125px',
+    margin: '0 auto',
     height: '250px',
     width: '250px',
     backgroundSize: 'cover',
     backgroundPosition: 'center center',
     textAlign: 'center',
-    borderRadius: '50%',
   },
 });
 
