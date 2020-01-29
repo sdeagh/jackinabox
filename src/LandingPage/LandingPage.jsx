@@ -20,7 +20,7 @@ function LandingPage(props) {
   const { classes } = props;
   return (
     <div>
-      <Parallax filter image={BackgroundImage}>
+      <Parallax filter size="large" image={BackgroundImage}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>

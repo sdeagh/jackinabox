@@ -6,15 +6,6 @@ const landingPageStyle = (theme) => ({
     color: theme.palette.text.primary,
     ...container,
   },
-  title: {
-    color: theme.palette.text.primary,
-    margin: '1.75rem 0 0.875rem',
-    textDecoration: 'none',
-    fontWeight: '700',
-    marginBottom: '1rem',
-    minHeight: '32px',
-    textAlign: 'center',
-  },
   main: {
     background: theme.palette.background.paper,
     position: 'relative',

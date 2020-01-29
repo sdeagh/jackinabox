@@ -18,7 +18,7 @@ const parallaxStyle = {
     },
     '&:after,&:before': {
       position: 'absolute',
-      zIndex: '1',
+      zIndex: 1,
       width: '100%',
       height: '100%',
       display: 'block',
@@ -26,6 +26,12 @@ const parallaxStyle = {
       top: '0',
       content: "''",
     },
+  },
+  large: {
+    height: '90vh',
+  },
+  medium: {
+    height: '45vh',
   },
   small: {
     height: '180px',

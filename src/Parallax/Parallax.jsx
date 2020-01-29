@@ -40,15 +40,17 @@ export default function Parallax(props) {
   });
 
   const {
-    filter, className, children, style, image, small,
+    filter, className, children, style, image, small, medium,
   } = props;
   const classes = useStyles();
   const parallaxClasses = classNames({
     [classes.parallax]: true,
     [classes.filter]: filter,
     [classes.small]: small,
+    [classes.medium]: medium,
     [className]: className !== undefined,
   });
+  console.log('Classes: ', parallaxClasses);
   return (
     <div
       className={parallaxClasses}
@@ -70,4 +72,5 @@ Parallax.propTypes = {
   style: PropTypes.string,
   image: PropTypes.string,
   small: PropTypes.bool,
+  medium: PropTypes.bool,
 };
