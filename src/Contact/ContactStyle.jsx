@@ -1,5 +1,11 @@
+import { container } from '../assets/css/material-kit-react';
 
 const ContactStyle = (theme) => ({
+  container: {
+    zIndex: '12',
+    color: theme.palette.text.primary,
+    ...container,
+  },
   gridContainer: {
     flexGrow: 1,
     paddingTop: '100px',

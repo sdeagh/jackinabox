@@ -1,6 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import withStyles from '@material-ui/core/styles/withStyles';
+import { makeStyles } from '@material-ui/core/styles';
 
 // core components
 import Typography from '@material-ui/core/Typography';
@@ -15,7 +14,6 @@ import Paper from '@material-ui/core/Paper';
 import EmailIcon from '@material-ui/icons/Email';
 import PhoneIcon from '@material-ui/icons/Phone';
 import FacebookIcon from '@material-ui/icons/Facebook';
-import TwitterIcon from '@material-ui/icons/Twitter';
 import InstagramIcon from '@material-ui/icons/Instagram';
 
 // core components
@@ -23,64 +21,65 @@ import ContactForm from './ContactForm';
 
 import ContactStyle from './ContactStyle';
 
-function Contact(props) {
-  const { classes } = props;
+const useStyles = makeStyles(ContactStyle);
+
+function Contact() {
+  const classes = useStyles();
   return (
-    <div className={classes.contactWrapper}>
+    <div className={classes.container}>
 
-      <Grid container spacing={2} className={classes.gridContainer}>
+      <div className={classes.contactWrapper}>
 
-        <Grid item md={6} sm={12} className={classes.gridItem}>
-          <Paper className={classes.paper} elevation={10}>
-            <Typography variant="h5">Contact Us!</Typography>
-            <ContactForm />
-          </Paper>
+        <Grid container spacing={2} className={classes.gridContainer}>
+
+          <Grid item md={6} sm={12} className={classes.gridItem}>
+            <Paper className={classes.paper} elevation={10}>
+              <Typography variant="h5">Contact Us!</Typography>
+              <ContactForm />
+            </Paper>
+          </Grid>
+
+          <Grid item md={6} sm={12} className={classes.gridItem}>
+            <Paper className={classes.paper} elevation={10}>
+
+              <div className={classes.gridItem}>
+                <Typography variant="h5">Social</Typography>
+              </div>
+              <List>
+                <ListItem button>
+                  <ListItemIcon>
+                    <EmailIcon />
+                  </ListItemIcon>
+                  <ListItemText primary="info@jackinaboxbars.co.uk" />
+                </ListItem>
+                <ListItem button>
+                  <ListItemIcon>
+                    <PhoneIcon />
+                  </ListItemIcon>
+                  <ListItemText primary="07898 123456" />
+                </ListItem>
+                <ListItem button>
+                  <ListItemIcon>
+                    <FacebookIcon />
+                  </ListItemIcon>
+                  <ListItemText primary="check out our facebook page" />
+                </ListItem>
+                <ListItem button>
+                  <ListItemIcon>
+                    <InstagramIcon />
+                  </ListItemIcon>
+                  <ListItemText primary="follow our story" />
+                </ListItem>
+              </List>
+            </Paper>
+          </Grid>
         </Grid>
-
-        <Grid item md={6} sm={12} className={classes.gridItem}>
-          <div className={classes.gridItem}>
-            <Typography variant="h5">Social</Typography>
-          </div>
-          <List>
-            <ListItem button>
-              <ListItemIcon>
-                <EmailIcon />
-              </ListItemIcon>
-              <ListItemText primary="info@jackinaboxbars.co.uk" />
-            </ListItem>
-            <ListItem button>
-              <ListItemIcon>
-                <PhoneIcon />
-              </ListItemIcon>
-              <ListItemText primary="07898 123456" />
-            </ListItem>
-            <ListItem button>
-              <ListItemIcon>
-                <FacebookIcon />
-              </ListItemIcon>
-              <ListItemText primary="check out our facebook page" />
-            </ListItem>
-            <ListItem button>
-              <ListItemIcon>
-                <TwitterIcon />
-              </ListItemIcon>
-              <ListItemText primary="@ us" />
-            </ListItem>
-            <ListItem button>
-              <ListItemIcon>
-                <InstagramIcon />
-              </ListItemIcon>
-              <ListItemText primary="follow our story" />
-            </ListItem>
-          </List>
-        </Grid>
-      </Grid>
+      </div>
     </div>
   );
 }
 
 Contact.propTypes = {
-  classes: PropTypes.objectOf(PropTypes.string).isRequired,
 };
 
-export default withStyles(ContactStyle)(Contact);
+export default Contact;
