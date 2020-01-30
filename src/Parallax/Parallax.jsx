@@ -50,7 +50,6 @@ export default function Parallax(props) {
     [classes.medium]: medium,
     [className]: className !== undefined,
   });
-  console.log('Classes: ', parallaxClasses);
   return (
     <div
       className={parallaxClasses}

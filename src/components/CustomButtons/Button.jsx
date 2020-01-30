@@ -13,7 +13,6 @@ import Button from '@material-ui/core/Button';
 import ButtonStyle from './ButtonStyle';
 
 function RegularButton({ ...props }) {
-  console.log(props);
   const {
     classes,
     color,

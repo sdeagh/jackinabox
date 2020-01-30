@@ -8,7 +8,6 @@ import HeaderLinks from './Header/HeaderLinks';
 import Footer from './Footer/Footer';
 import LandingPage from './LandingPage/LandingPage';
 import Contact from './Contact/Contact';
-import About from './About/About';
 import Packages from './Packages/Packages';
 import Drinks from './Drinks/Drinks';
 import Gallery from './Gallery/Gallery';
@@ -30,7 +29,6 @@ function App() {
       />
       <Switch>
         <Route exact path="/" component={LandingPage} />
-        <Route path="/about" component={About} />
         <Route path="/gallery" component={Gallery} />
         <Route path="/packages" component={Packages} />
         <Route path="/drinks" component={Drinks} />
