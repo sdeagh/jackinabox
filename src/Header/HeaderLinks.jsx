@@ -20,11 +20,6 @@ export default function HeaderLinks() {
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
-        <Link to="/about" className={classes.navLink}>
-          About
-        </Link>
-      </ListItem>
-      <ListItem className={classes.listItem}>
         <Link to="/gallery" className={classes.navLink}>
           Gallery
         </Link>
