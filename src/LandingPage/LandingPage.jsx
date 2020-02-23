@@ -28,7 +28,7 @@ function LandingPage(props) {
                 We&apos;d love to pop up at your next event
               </Typography>
               <br />
-              <div style={{
+              {/* <div style={{
                 backgroundImage: `url(${FireworksImage})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center center',
@@ -43,7 +43,7 @@ function LandingPage(props) {
                 <Typography variant="body2">
                   Enjoy 20% off all bookings made in January & February
                 </Typography>
-              </div>
+              </div> */}
             </GridItem>
 
 
