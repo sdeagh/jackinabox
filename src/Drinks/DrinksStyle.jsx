@@ -42,13 +42,6 @@ const drinksStyle = (theme) => ({
     fontWeight: '700',
     fontSize: '20px',
   },
-  // main: {
-  //   background: theme.palette.background.paper,
-  //   position: 'relative',
-  //   margin: '0 30px 0px 30px',
-  //   borderRadius: theme.spacing(1),
-  //   boxShadow: '6px 6px 24px 2px rgba(255, 255, 255, 0.14), 6px 6px 24px 5px rgba(255, 255, 255, 0.12), 0px 6px 1px -5px rgba(255, 255, 255, 0.12)',
-  // },
   mainRaised: {
     position: 'relative',
     margin: '-60px 30px 0px',
