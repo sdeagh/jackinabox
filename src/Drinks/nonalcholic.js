@@ -18,7 +18,7 @@ const nonAlcoholic = [
     name: 'Fruit Juices',
   },
   {
-    name: 'Non-alcoholic Beer',
+    name: 'Non Alcoholic Beer',
   },
   {
     name: 'Bottled Water',

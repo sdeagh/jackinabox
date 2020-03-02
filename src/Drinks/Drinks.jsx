@@ -13,6 +13,7 @@ import beers from './beers';
 import gins from './gins';
 import ciders from './ciders';
 import wines from './wines';
+import nonAlcoholic from './nonalcholic';
 
 import drinksStyle from './DrinksStyle';
 import BackgroundImage from '../assets/img/jackbox1.jpg';
@@ -46,6 +47,7 @@ function Drinks() {
             <DrinksList drinks={beers} title="Beer" />
             <DrinksList drinks={ciders} title="Cider" />
             <DrinksList drinks={wines} title="Wine" />
+            <DrinksList drinks={nonAlcoholic} title="Non Alcoholic" />
 
           </Grid>
         </div>
