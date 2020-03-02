@@ -42,17 +42,17 @@ const drinksStyle = (theme) => ({
     fontWeight: '700',
     fontSize: '20px',
   },
+  subHeading: {
+    textAlign: 'center',
+  },
   mainRaised: {
     position: 'relative',
     margin: '-60px 30px 0px',
     borderRadius: theme.spacing(6),
   },
-  expansionSummary: {
-    textAlign: 'center',
-  },
   content: {
-    backgroundColoer: 'red',
-    height: '300px',
+    height: '100px',
+    textAlign: 'center',
   },
 });
 

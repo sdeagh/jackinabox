@@ -14,6 +14,8 @@ import GridItem from '../components/Grid/GridItem';
 
 import beers from './beers';
 import gins from './gins';
+import ciders from './ciders';
+import wines from './wines';
 
 import drinksStyle from './DrinksStyle';
 import BackgroundImage from '../assets/img/jackbox1.jpg';
@@ -41,26 +43,33 @@ function Drinks() {
 
       <div className={`${classes.mainRaised}`}>
         <div className={classes.container}>
-          <Grid container spacing={2} className={classes.gridContainer}>
+          <Grid container spacing={2} alignItems="center" justify="center">
+            <Grid item xs={12}>
 
-            <Grid item md={12} sm={12} className={classes.gridItem}>
               <ExpansionPanel>
-                <ExpansionPanelSummary classes={{ content: classes.content }} className={classes.expansionSummary}>
 
-                  <div className={classes.logoTop} />
-                  <Typography variant="h5" className={classes.heading}>
-                    Gin
-                  </Typography>
-                  <div className={classes.logoBottom} />
-
+                <ExpansionPanelSummary classes={{ content: classes.content }}>
+                  <Grid container justify="center" alignItems="center" spacing={0}>
+                    <Grid item xs={12}>
+                      <div className={classes.logoTop} />
+                    </Grid>
+                    <Grid item xs={12}>
+                      <Typography variant="h5" className={classes.heading}>
+                        Gin
+                      </Typography>
+                    </Grid>
+                    <Grid item xs={12}>
+                      <div className={classes.logoBottom} />
+                    </Grid>
+                  </Grid>
                 </ExpansionPanelSummary>
+
                 <ExpansionPanelDetails>
                   <Paper className={classes.paper}>
-                    <Typography paragraph variant="body1">
-                  All served with Fever-Tree or Schweppes Tonic
+                    <Typography paragraph variant="body1" className={classes.subHeading}>
+                      All served with Fever-Tree or Schweppes Tonic
                     </Typography>
-
-                    { gins.map((gin) => (
+                    {gins.map((gin) => (
                       <div>
                         <Typography variant="h6">
                           {gin.name}
@@ -69,49 +78,126 @@ function Drinks() {
                           {gin.description}
                         </Typography>
                       </div>
-
                     ))}
-
                   </Paper>
                 </ExpansionPanelDetails>
               </ExpansionPanel>
             </Grid>
 
-            <Grid item md={12} sm={12} className={classes.gridItem}>
-              <Paper className={classes.paper}>
-                <div className={classes.logoTop} />
-                <Typography variant="h5" className={classes.heading}>
-                  Beer
-                </Typography>
-                <div className={classes.logoBottom} />
+            <Grid item xs={12}>
+              <ExpansionPanel>
+                <ExpansionPanelSummary classes={{ content: classes.content }}>
+                  <Grid container justify="center" alignItems="center" spacing={0}>
 
-                { beers.map((beer) => (
-                  <Typography variant="h6">
-                    {beer.name}
-                  </Typography>
-                ))}
+                    <Grid item xs={12}>
+                      <div className={classes.logoTop} />
+                    </Grid>
+                    <Grid item xs={12}>
+                      <Typography variant="h5" className={classes.heading}>
+                        Beer
+                      </Typography>
+                    </Grid>
+                    <Grid item xs={12}>
+                      <div className={classes.logoBottom} />
 
-              </Paper>
+                    </Grid>
+                  </Grid>
+                </ExpansionPanelSummary>
+
+                <ExpansionPanelDetails>
+                  <Grid container spacing={2}>
+
+                    {beers.map((beer) => (
+                      <Grid item xs={12} md={6} lg={4}>
+                        <Typography variant="h6">
+                          {beer.name}
+                        </Typography>
+                      </Grid>
+                    ))}
+                  </Grid>
+                </ExpansionPanelDetails>
+
+              </ExpansionPanel>
+
             </Grid>
 
-            <Grid item md={12} sm={12} className={classes.gridItem}>
-              <Paper className={classes.paper}>
-                <div className={classes.logoTop} />
+            <Grid item xs={12}>
+              <ExpansionPanel>
+                <ExpansionPanelSummary classes={{ content: classes.content }}>
+                  <Grid container justify="center" alignItems="center" spacing={0}>
 
-                <Typography variant="h5" className={classes.heading}>
-              Open Bar
-                </Typography>
-                <div className={classes.logoBottom} />
+                    <Grid item xs={12}>
+                      <div className={classes.logoTop} />
+                    </Grid>
+                    <Grid item xs={12}>
+                      <Typography variant="h5" className={classes.heading}>
+                        Cider
+                      </Typography>
+                    </Grid>
+                    <Grid item xs={12}>
+                      <div className={classes.logoBottom} />
 
-                <Typography variant="body1">
-              You offer your guests free drinks and we send you a detailed invoice post-event.
-                </Typography>
-              </Paper>
+                    </Grid>
+                  </Grid>
+                </ExpansionPanelSummary>
+
+                <ExpansionPanelDetails>
+                  <Grid container spacing={2}>
+
+                    {ciders.map((cider) => (
+                      <Grid item xs={12} md={6} lg={4}>
+                        <Typography variant="h6">
+                          {cider.name}
+                        </Typography>
+                      </Grid>
+                    ))}
+                  </Grid>
+                </ExpansionPanelDetails>
+
+              </ExpansionPanel>
+
+            </Grid>
+
+            <Grid item xs={12}>
+              <ExpansionPanel>
+                <ExpansionPanelSummary classes={{ content: classes.content }}>
+                  <Grid container justify="center" alignItems="center" spacing={0}>
+
+                    <Grid item xs={12}>
+                      <div className={classes.logoTop} />
+                    </Grid>
+                    <Grid item xs={12}>
+                      <Typography variant="h5" className={classes.heading}>
+                        Wine
+                      </Typography>
+                    </Grid>
+                    <Grid item xs={12}>
+                      <div className={classes.logoBottom} />
+
+                    </Grid>
+                  </Grid>
+                </ExpansionPanelSummary>
+
+                <ExpansionPanelDetails>
+                  <Grid container spacing={2}>
+
+                    {wines.map((wine) => (
+                      <Grid item xs={12} md={6} lg={4}>
+                        <Typography variant="h6">
+                          {wine.name}
+                        </Typography>
+                      </Grid>
+                    ))}
+                  </Grid>
+                </ExpansionPanelDetails>
+
+              </ExpansionPanel>
+
             </Grid>
 
           </Grid>
-
         </div>
+
       </div>
     </div>
   );
