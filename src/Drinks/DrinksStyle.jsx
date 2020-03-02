@@ -47,6 +47,13 @@ const drinksStyle = (theme) => ({
     margin: '-60px 30px 0px',
     borderRadius: theme.spacing(6),
   },
+  expansionSummary: {
+    textAlign: 'center',
+  },
+  content: {
+    backgroundColoer: 'red',
+    height: '300px',
+  },
 });
 
 export default drinksStyle;
