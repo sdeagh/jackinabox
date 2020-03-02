@@ -59,16 +59,3 @@ function DrinksList(props) {
 }
 
 export default DrinksList;
-
-// {
-//   gins.map((gin) => (
-//     <div>
-//       <Typography variant="h6">
-//         {gin.name}
-//       </Typography>
-//       <Typography paragraph variant="caption">
-//         {gin.description}
-//       </Typography>
-//     </div>
-//   ))
-// }
