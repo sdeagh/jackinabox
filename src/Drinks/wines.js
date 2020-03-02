@@ -9,9 +9,14 @@ const wines = [
     name: 'Rose',
   },
   {
-    name: 'Sparkling',
+    name: 'Champagne',
   },
-
+  {
+    name: 'Prosecco',
+  },
+  {
+    name: 'Cava',
+  },
 ];
 
 export default wines;
