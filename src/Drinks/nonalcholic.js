@@ -9,7 +9,7 @@ const nonAlcoholic = [
     name: '7-Up',
   },
   {
-    name: 'English Eldeflower',
+    name: 'English Elderflower',
   },
   {
     name: 'Appletiser',
