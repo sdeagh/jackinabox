@@ -16,7 +16,7 @@ import wines from './wines';
 import nonAlcoholic from './nonalcholic';
 
 import drinksStyle from './DrinksStyle';
-import BackgroundImage from '../assets/img/jackbox1.jpg';
+import BackgroundImage from '../assets/img/jackbox1.jpeg';
 
 const useStyles = makeStyles(drinksStyle);
 

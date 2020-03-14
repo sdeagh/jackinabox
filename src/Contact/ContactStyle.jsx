@@ -23,6 +23,11 @@ const ContactStyle = (theme) => ({
     height: '100%',
     padding: theme.spacing(2),
   },
+  mainRaised: {
+    position: 'relative',
+    margin: '-60px 30px 0px',
+    borderRadius: theme.spacing(6),
+  },
 });
 
 export default ContactStyle;

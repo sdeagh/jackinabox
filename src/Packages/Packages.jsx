@@ -10,7 +10,7 @@ import GridContainer from '../components/Grid/GridContainer';
 import GridItem from '../components/Grid/GridItem';
 
 import packagesStyle from './PackagesStyle';
-import BackgroundImage from '../assets/img/jackbox1.jpg';
+import BackgroundImage from '../assets/img/jackbox1.jpeg';
 
 const useStyles = makeStyles(packagesStyle);
 
@@ -33,7 +33,7 @@ function Packages() {
         </div>
       </Parallax>
 
-      <div className={`${classes.mainRaised}`}>
+      <div className={classes.mainRaised}>
         <div className={classes.container}>
           <Grid container spacing={2} className={classes.gridContainer}>
 

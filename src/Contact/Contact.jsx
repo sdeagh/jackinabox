@@ -16,6 +16,11 @@ import PhoneIcon from '@material-ui/icons/Phone';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
 
+import Parallax from '../Parallax/Parallax';
+import GridContainer from '../components/Grid/GridContainer';
+import GridItem from '../components/Grid/GridItem';
+
+import BackgroundImage from '../assets/img/jackbox1.jpeg';
 // core components
 import ContactForm from './ContactForm';
 
@@ -26,54 +31,70 @@ const useStyles = makeStyles(ContactStyle);
 function Contact() {
   const classes = useStyles();
   return (
-    <div className={classes.container}>
+    <div>
+      <Parallax filter medium image={BackgroundImage} className={classes.back}>
+        <div className={classes.container}>
+          <GridContainer>
+            <GridItem xs={12} sm={12} md={6}>
+              <Typography variant="h6" gutterBottom className={classes.title}>
+                Please contact us for any questions or bookings.
+              </Typography>
+            </GridItem>
+          </GridContainer>
+        </div>
+      </Parallax>
+      <div className={classes.mainRaised}>
 
-      <div className={classes.contactWrapper}>
+        <div className={classes.container}>
 
-        <Grid container spacing={2} className={classes.gridContainer}>
+          <div className={classes.contactWrapper}>
 
-          <Grid item md={6} sm={12} className={classes.gridItem}>
-            <Paper className={classes.paper} elevation={10}>
-              <Typography variant="h5">Contact Us!</Typography>
-              <ContactForm />
-            </Paper>
-          </Grid>
+            <Grid container spacing={2} className={classes.gridContainer}>
 
-          <Grid item md={6} sm={12} className={classes.gridItem}>
-            <Paper className={classes.paper} elevation={10}>
+              <Grid item md={6} sm={12} className={classes.gridItem}>
+                <Paper className={classes.paper} elevation={10}>
+                  <Typography variant="h5">Contact Us!</Typography>
+                  <ContactForm />
+                </Paper>
+              </Grid>
 
-              <div className={classes.gridItem}>
-                <Typography variant="h5">Social</Typography>
-              </div>
-              <List>
-                <ListItem button>
-                  <ListItemIcon>
-                    <EmailIcon />
-                  </ListItemIcon>
-                  <ListItemText primary="info@jackinaboxbars.co.uk" />
-                </ListItem>
-                <ListItem button>
-                  <ListItemIcon>
-                    <PhoneIcon />
-                  </ListItemIcon>
-                  <ListItemText primary="07898 123456" />
-                </ListItem>
-                <ListItem button>
-                  <ListItemIcon>
-                    <FacebookIcon />
-                  </ListItemIcon>
-                  <ListItemText primary="check out our facebook page" />
-                </ListItem>
-                <ListItem button>
-                  <ListItemIcon>
-                    <InstagramIcon />
-                  </ListItemIcon>
-                  <ListItemText primary="follow our story" />
-                </ListItem>
-              </List>
-            </Paper>
-          </Grid>
-        </Grid>
+              <Grid item md={6} sm={12} className={classes.gridItem}>
+                <Paper className={classes.paper} elevation={10}>
+
+                  <div className={classes.gridItem}>
+                    <Typography variant="h5">Social</Typography>
+                  </div>
+                  <List>
+                    <ListItem button>
+                      <ListItemIcon>
+                        <EmailIcon />
+                      </ListItemIcon>
+                      <ListItemText primary="info@jackinaboxbars.co.uk" />
+                    </ListItem>
+                    <ListItem button>
+                      <ListItemIcon>
+                        <PhoneIcon />
+                      </ListItemIcon>
+                      <ListItemText primary="07898 123456" />
+                    </ListItem>
+                    <ListItem button>
+                      <ListItemIcon>
+                        <FacebookIcon />
+                      </ListItemIcon>
+                      <ListItemText primary="check out our facebook page" />
+                    </ListItem>
+                    <ListItem button>
+                      <ListItemIcon>
+                        <InstagramIcon />
+                      </ListItemIcon>
+                      <ListItemText primary="follow our story" />
+                    </ListItem>
+                  </List>
+                </Paper>
+              </Grid>
+            </Grid>
+          </div>
+        </div>
       </div>
     </div>
   );
