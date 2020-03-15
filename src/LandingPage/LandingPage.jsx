@@ -14,7 +14,6 @@ import Introduction from './Introduction';
 import LandingPageStyle from './LandingPageStyle';
 
 import BackgroundImage from '../assets/img/jackbox1.jpeg';
-// import FireworksImage from '../assets/img/fireworks4.jpg';
 
 function LandingPage(props) {
   const { classes } = props;

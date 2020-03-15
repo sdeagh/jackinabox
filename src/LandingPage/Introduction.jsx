@@ -8,7 +8,7 @@ import { Typography } from '@material-ui/core';
 import GridContainer from '../components/Grid/GridContainer';
 import GridItem from '../components/Grid/GridItem';
 import IntroductionStyle from './IntroductionStyle';
-import FireworksImage from '../assets/img/JIAB-FINAL-LOGO.jpg';
+import LogoImage from '../assets/img/JIAB-FINAL-LOGO.jpg';
 
 const useStyles = makeStyles(IntroductionStyle);
 
@@ -20,7 +20,7 @@ function Introduction() {
         <div
           className={classes.logo}
           style={{
-            backgroundImage: `url(${FireworksImage})`,
+            backgroundImage: `url(${LogoImage})`,
           }}
         />
         <Typography variant="body1" paragraph className={classes.description}>
