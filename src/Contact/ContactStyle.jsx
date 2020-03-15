@@ -11,7 +11,6 @@ const ContactStyle = (theme) => ({
     paddingTop: '100px',
     paddingBottom: theme.spacing(2),
   },
-
   contactWrapper: {
     width: '100%',
   },

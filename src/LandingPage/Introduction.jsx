@@ -30,7 +30,7 @@ function Introduction() {
         </Typography>
         <Typography variant="body1" paragraph className={classes.description}>
           All of our bars are custom built and we can specifically tailor them to
-          your event. We are based in Kent but we able to travel across the UK if
+          your event. We are based in Kent but we are able to travel across the UK if
           required. We can also stock our bars with any type of drinks or refreshments.
         </Typography>
         <Typography variant="body1" paragraph className={classes.description}>

@@ -27,23 +27,6 @@ function LandingPage(props) {
               <Typography variant="h2" gutterBottom color="inherit">
                 We&apos;d love to pop up at your next event
               </Typography>
-              <br />
-              {/* <div style={{
-                backgroundImage: `url(${FireworksImage})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center center',
-                textAlign: 'center',
-                padding: '30px 30px 30px 30px',
-                borderRadius: '8px',
-              }}
-              >
-                <Typography variant="h4" paragraph>
-                  Happy 2020
-                </Typography>
-                <Typography variant="body2">
-                  Enjoy 20% off all bookings made in January & February
-                </Typography>
-              </div> */}
             </GridItem>
 
 

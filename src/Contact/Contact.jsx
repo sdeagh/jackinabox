@@ -88,7 +88,7 @@ function Contact() {
                       <ListItemIcon>
                         <FacebookIcon />
                       </ListItemIcon>
-                      <ListItemLink href="https://www.facebook.com/JackInABoxBars" target="_blank" className={classes.itemLink}>
+                      <ListItemLink href="https://www.facebook.com/jackinaboxmobilebars/" target="_blank" className={classes.itemLink}>
                         <ListItemText primary="check out our facebook page" />
                       </ListItemLink>
 
@@ -97,7 +97,7 @@ function Contact() {
                       <ListItemIcon>
                         <InstagramIcon />
                       </ListItemIcon>
-                      <ListItemLink href="https://www.instagram.com/JackInABoxBars" target="_blank" className={classes.itemLink}>
+                      <ListItemLink href="https://www.instagram.com/jackinaboxmobilebars/?hl=en" target="_blank" className={classes.itemLink}>
                         <ListItemText primary="follow our story" />
                       </ListItemLink>
                     </ListItem>

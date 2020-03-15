@@ -49,7 +49,7 @@ export default function HeaderLinks() {
         >
           <Button
             color="transparent"
-            href="https://www.facebook.com/JackInABoxBars"
+            href="https://www.facebook.com/jackinaboxmobilebars/"
             target="_blank"
             className={classes.navLink}
           >
@@ -66,7 +66,7 @@ export default function HeaderLinks() {
         >
           <Button
             color="transparent"
-            href="https://www.instagram.com/JackInABoxBars"
+            href="https://www.instagram.com/jackinaboxmobilebars/?hl=en"
             target="_blank"
             className={classes.navLink}
           >
