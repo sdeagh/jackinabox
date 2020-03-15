@@ -28,6 +28,9 @@ const ContactStyle = (theme) => ({
     margin: '-60px 30px 0px',
     borderRadius: theme.spacing(6),
   },
+  itemLink: {
+    padding: 0,
+  },
 });
 
 export default ContactStyle;

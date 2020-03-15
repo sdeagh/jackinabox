@@ -28,6 +28,10 @@ import ContactStyle from './ContactStyle';
 
 const useStyles = makeStyles(ContactStyle);
 
+function ListItemLink(props) {
+  return <ListItem button component="a" {...props} />;
+}
+
 function Contact() {
   const classes = useStyles();
   return (
@@ -51,43 +55,51 @@ function Contact() {
 
             <Grid container spacing={2} className={classes.gridContainer}>
 
-              <Grid item md={6} sm={12} className={classes.gridItem}>
+              {/* <Grid item md={6} sm={12} className={classes.gridItem}>
                 <Paper className={classes.paper} elevation={10}>
                   <Typography variant="h5">Contact Us!</Typography>
                   <ContactForm />
                 </Paper>
-              </Grid>
+              </Grid> */}
 
-              <Grid item md={6} sm={12} className={classes.gridItem}>
+              <Grid item md={12} sm={12} className={classes.gridItem}>
                 <Paper className={classes.paper} elevation={10}>
 
                   <div className={classes.gridItem}>
-                    <Typography variant="h5">Social</Typography>
+                    <Typography variant="h5">Contact Details</Typography>
                   </div>
                   <List>
                     <ListItem button>
                       <ListItemIcon>
                         <EmailIcon />
                       </ListItemIcon>
-                      <ListItemText primary="info@jackinaboxbars.co.uk" />
+                      <ListItemLink href="mailto:info@jackinaboxbars.co.uk" className={classes.itemLink}>
+                        <ListItemText primary="info@jackinaboxbars.co.uk" />
+                      </ListItemLink>
+
                     </ListItem>
                     <ListItem button>
                       <ListItemIcon>
                         <PhoneIcon />
                       </ListItemIcon>
-                      <ListItemText primary="07898 123456" />
+                      <ListItemText primary="07595 957957" />
                     </ListItem>
                     <ListItem button>
                       <ListItemIcon>
                         <FacebookIcon />
                       </ListItemIcon>
-                      <ListItemText primary="check out our facebook page" />
+                      <ListItemLink href="https://www.facebook.com/JackInABoxBars" target="_blank" className={classes.itemLink}>
+                        <ListItemText primary="check out our facebook page" />
+                      </ListItemLink>
+
                     </ListItem>
                     <ListItem button>
                       <ListItemIcon>
                         <InstagramIcon />
                       </ListItemIcon>
-                      <ListItemText primary="follow our story" />
+                      <ListItemLink href="https://www.instagram.com/JackInABoxBars" target="_blank" className={classes.itemLink}>
+                        <ListItemText primary="follow our story" />
+                      </ListItemLink>
                     </ListItem>
                   </List>
                 </Paper>
@@ -104,3 +116,7 @@ Contact.propTypes = {
 };
 
 export default Contact;
+
+
+// 357473  #357473
+// #396364#
